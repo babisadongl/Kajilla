@@ -1,0 +1,29 @@
+.slider-text{
+    right: 4%;
+    bottom: 7%;
+    z-index: 1;
+}
+.btn.btn-lg{
+    padding: 1rem 1rem !important;
+    font-size: 0.9rem !important;
+    width: 55% !important;
+}
+.flipbook-container{
+    width: fit-content;
+    min-width: 100%
+}
+mdb-icon{
+    color: black;
+}
+
+@media (min-width: 577px) {
+    .res-banner{
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner{
+        display: none;
+    }
+}

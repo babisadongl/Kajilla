@@ -1,0 +1,62 @@
+<div class="row footer py-4">
+  <div class="about-us col-md-4 col-lg-4 d-flex flex-column pl-4 pt-3 h-100">
+    <h5 style="min-height: 25%">About Us</h5>
+    <p>
+      "Being well-dressed hasn't much to do with having good clothes. It's a
+      question of good balance and good common sense."
+    </p>
+    <p>-Oscar de la Renta</p>
+  </div>
+  <div class="col-md-3 col-lg-3 d-flex flex-column pl-4 py-3 h-100">
+    <h5 style="min-height: 25%">Subscribe Via Email</h5>
+    <p>Receive notifications of new posts.</p>
+    <!-- <input type="email" class="w-75" placeholder="Email Address"> -->
+    <input
+      type="email"
+      class="email form-control"
+      placeholder="Email Address"
+    />
+    <button type="button" class="btn btn-danger ml-0 mt-2">Subscribe</button>
+  </div>
+  <div class="col-md-3 col-lg-3 d-flex flex-column pl-4 pt-3 h-100 w-50">
+    <h5 style="min-height: 25%">Contact Us</h5>
+    <p class="text-break">Gmail: Kajilla2020@gmail.com</p>
+    <p>Phone: 9843500745</p>
+    <!-- <p>PO Box no: 456123</p> -->
+    <p>Address: Kanibahal, Lalitpur</p>
+  </div>
+  <div class="col-md-2 col-lg-2 d-flex flex-column pl-4 pt-3 h-100">
+    <h5 style="min-height: 25%">Category</h5>
+    <p>
+      <a [routerLink]="['home']" class="text-white" (click)="scrollTop()"
+        >Home</a
+      >
+    </p>
+    <!-- <p>Magazine</p>
+          <p>Blogs</p> -->
+    <p>
+      <a [routerLink]="['about']" class="text-white" (click)="scrollTop()"
+        >About</a
+      >
+    </p>
+  </div>
+  <div class="footer-icon w-100">
+    <div class="row d-flex flex-column align-items-center mt-2">
+      <p style="margin-bottom: 0.5rem">2022 All rights reserved</p>
+      <div class="d-flex flex-row justify-content-around" style="width: 15%">
+        <a href="https://m.facebook.com/100613875121010/" target="blank">
+          <i class="fab fa-facebook-f text-white"></i>
+        </a>
+        <a
+          href="https://instagram.com/ka_jilla?utm_medium=copy_link"
+          target="blank"
+        >
+          <i class="fab fa-instagram text-white"></i>
+        </a>
+        <a href="https://twitter.com/" target="blank">
+          <i class="fab fa-twitter text-white"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

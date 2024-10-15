@@ -1,0 +1,165 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Poppins";
+    src: local("Poppins"), url(./assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+
+i{
+    color: grey;
+    // font-size: 1.25rem;
+}
+i:hover{
+    cursor: pointer;
+    color: black;
+}
+h1,h2,h3,h4,h5,h6,p,a,li,span{
+    // font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins",Helvetica , sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+}
+
+p{
+    font-size: 18px;
+}
+
+mdb-card{
+    // width: 48% !important;
+    width: fit-content;
+    margin: 0px !important;
+}
+
+mdb-card:hover{
+    cursor: pointer;
+}
+
+.card {
+    max-width: 30% !important;
+}
+
+carousel.carousel {
+    z-index: 0 !important;
+}
+
+flipbook {
+    .page{
+        filter: drop-shadow(0px 0px 2px grey) !important
+      }
+  }
+
+  .gallery .ng-image-slider .ng-image-slider-container .main .main-inner.with-ng-main-pagination{
+      height: 100% !important;
+  }
+
+  .ng-image-slider .ng-image-slider-container .main .main-inner .img-div img, .ng-image-slider .ng-image-slider-container .main .main-inner .img-div video{
+      border-radius: 0px !important;
+  }
+
+.image:hover{
+    cursor: pointer;
+}
+
+.modal-open .modal {
+    overflow: scroll !important;
+}
+
+a:hover{
+    color: black;
+}
+
+.navbar-collapse{
+    position: absolute !important;
+    top: 56px !important;
+    background-color: #232A37 !important;
+    z-index: 1 !important;
+    width: 100% !important;
+    height: 165% !important;
+    left: 0px !important;
+}
+
+//----- ------//
+.ng-image-slider .ng-image-slider-container .ng-main-pagination{
+    color: transparent !important;
+}
+
+// .sponsers .ng-image-slider .ng-image-slider-container .main .main-inner .img-div{
+//     margin-right: 0.5rem!important;
+// }
+
+//------- Header Starts ------- //
+.menu{
+        a{
+          color: grey;
+          font-weight: 600;
+          font-size: 1.25rem;
+        }
+        a:hover{
+            color: black;
+        }
+}
+//------- Header Ends ------- //
+
+//------- Footer Starts ------- //
+.footer{
+    position:sticky;
+    // bottom: 0;
+    background-color: #232A37;
+    h5,p{
+        color: white;
+    }
+    .email{
+        background-color: #232A37 !important;
+        border: 1px solid #B10F13;
+        transition: none !important;
+        min-height: 24%;
+    }
+    .email:focus{
+        box-shadow: none !important;
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: #B10F13;
+    }
+    button{
+        background-color: #B10F13 !important;
+    }
+}
+//------- Footer Ends ------- //
+
+//------- Common ------- //
+.btn{
+    background-color: #AEAEAE !important;
+    color: white !important;
+    padding: 0.8rem;
+    min-width: 10%;
+}
+
+.btn:hover, .btn:focus{
+    background-color: black !important;
+}
+
+.btn-rounded{
+    border-radius: 2rem !important;
+}
+
+.date{
+    font-size: 0.8rem;
+    color: #757575;
+}
+
+.read-more{
+    color: #A16262;
+}
+
+@media (max-width: 770px) { 
+    h1{
+        font-size: 2rem;
+    }
+    h5{
+        font-size: 1.1rem;
+    }
+}
+//------- Common ------- //

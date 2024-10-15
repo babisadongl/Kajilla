@@ -1,0 +1,40 @@
+<div class="row header">
+    <div class="col-sm-12 col-md-2 col-lg-2 d-flex flex-column justify-content-between">
+        <a href="https://m.facebook.com/100613875121010/" target="blank">
+            <i class="fab fa-facebook-f fa-lg py-3"></i>
+        </a>
+        <a href="https://instagram.com/ka_jilla?utm_medium=copy_link" target="blank">
+            <i class="fab fa-instagram fa-lg py-3"></i>
+        </a>
+        <a href="https://mobile.twitter.com/kajilla2" target="blank">
+            <i class="fab fa-twitter fa-lg pt-3"></i>
+        </a>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-8 d-flex flex-column align-items-center justify-content-center">
+        <img src='/assets/kajilla-logo.png' class="w-25 pb-2" alt="1">
+        <div class="menu d-flex flex-row">
+            <a [routerLink]="['home']" class="pr-2">Home</a>
+            <!--<a href="">Magazine</a> -->
+            <!--<a [routerLink]="['/blog-screen']">Blogs</a> -->
+            <a [routerLink]="['about']" class="pl-2">About</a>
+        </div>
+    </div>
+    <!-- <div class="col-sm-12 col-md-2 col-lg-2 d-flex flex-column align-items-end justify-content-between">
+        <a href="">
+            <i class="fas fa-search fa-lg py-3"></i>
+        </a>
+        <a href="">
+            <i class="fas fa-user-alt fa-lg py-3" ></i>
+        </a>
+    </div> -->
+</div>
+
+<div class="res-header">
+    <mdb-navbar SideClass="navbar navbar-1 navbar-light lighten-2 mt-3" [containerInside]="false">
+        <mdb-navbar-brand class="w-75"><img src='/assets/kajilla-logo.png' class="w-50" alt="1"></mdb-navbar-brand>
+        <links class="w-25">
+            <a class="nav-link text-white waves-light" mdbWavesEffect [routerLink]="['home']">Home</a>
+            <a class="nav-link text-white waves-light" mdbWavesEffect [routerLink]="['/about']">About Us</a>
+        </links>
+    </mdb-navbar>
+</div>

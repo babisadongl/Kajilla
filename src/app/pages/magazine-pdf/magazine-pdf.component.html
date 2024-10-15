@@ -1,0 +1,31 @@
+<div class="position-relative pt-2">
+    <!-- <div class="position-absolute w-25 d-flex flex-column align-items-end slider-text">
+        <h2 class="text-white font-weight-bold">Predicting Asthetics</h2>
+        <h2 class="text-white font-weight-bold">of the Future</h2>
+        <button type="button" class="btn btn-lg btn-rounded" (click)="basicModal.show()">Explore Magazine</button>
+        <button mdbBtn type="button" class="btn btn-lg mt-3" (click)="basicModal.show()" mdbWavesEffect>Explore Magazine</button>
+    </div> -->
+    <carousel class="banner" [images]="imagesForSlider" [objectFit]="'cover'" [cellWidth]="'100%'" [height]="500" [dots]="true"
+        [loop]="true">
+    </carousel>
+    <carousel class="res-banner" [images]="imagesForSlider" [objectFit]="'cover'" [cellWidth]="'100%'" [dots]="true"
+        [loop]="true">
+    </carousel>
+</div>
+<!-- <div mdbModal #basicModal="mdbModal" class="modal fade top" tabindex="-1" role="dialog"
+    aria-labelledby="myBasicModalLabel" aria-hidden="true">
+    <div class="d-flex flex-column h-100 flipbook-container">
+        <div class="d-flex justify-content-between my-3 mx-5">
+            <mdb-icon fas icon="arrow-left" (click)="basicModal.hide()"></mdb-icon>
+            <div>
+                <mdb-icon fas icon="search-plus" class="mr-1" (click)="zoomIn()"></mdb-icon>
+                <mdb-icon fas icon="search-minus" class="mr-1" (click)="zoomOut()"></mdb-icon>
+                <mdb-icon fas icon="share-alt" class="mr-1"></mdb-icon>
+                <mdb-icon far icon="bookmark"></mdb-icon>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <flipbook [model]="book" [startAt]="0"></flipbook>
+        </div>
+    </div>
+</div> -->

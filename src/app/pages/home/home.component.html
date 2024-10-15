@@ -1,0 +1,110 @@
+<div
+  *ngIf="sponser.length === 0 && gallery.length === 0"
+  class="w-100 d-flex justify-content-center align-middle"
+  style="height: 40rem"
+>
+  <div class="loading align-self-center">
+    <div class="spinner-grow loading-icon" role="status"></div>
+  </div>
+</div>
+<div *ngIf="sponser.length > 0 && gallery.length > 0">
+  <app-magazine-pdf [bannerImages]="gallery"></app-magazine-pdf>
+  <!--  <h4 class="text-center font-weight-bold pt-5">Editors Choice Magazines</h4>
+<hr class="pb-4"> -->
+  <!-- <div class="imagesSlider pb-5">
+  <carousel [images]="editorsChoiceImages" [objectFit]="'contain'" [loop]="true" (click)="Clicked()">
+  </carousel>
+</div> -->
+  <!-- <div class="row justify-content-center">
+  <button mdbBtn type="button" mdbWavesEffect>Show More</button>
+  <button type="button" class="btn btn-rounded">Show More</button>
+</div>
+<div class="row ml-5">
+  <div class="col-5">
+    <h4 class="text-center font-weight-bold pt-5">Top Viewed Magazines</h4>
+    <hr class="pb-4">
+    <img *ngFor = "let image of tvmPhotos" src="{{image.path}}" class="img-fluid z-depth-1 ml-3 mb-4" alt="1">
+  </div>
+  <div class="text-center col-7">
+    <h4 class="pt-5 font-weight-bold">Recent Blogs</h4>
+    <hr class="pb-4">
+    <div class="row">
+      <mdb-card *ngFor = "let image of recentBlogImages" class="mx-2 mb-4">
+        <mdb-card-img src="{{image.path}}" alt="Card image cap"></mdb-card-img>
+        <mdb-card-body>
+          <mdb-card-title>
+            <h6 class="font-weight-bold">Wrap Your Head Around Large Scale Architecture</h6>
+            <span class="float-right date">Sep 02, 2021</span>
+          </mdb-card-title>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+  </div>
+</div>
+<h4 class="text-center font-weight-bold pt-5">Top Blogs</h4>
+<hr class="pb-4">
+<div class="row ml-5">
+  <mdb-card *ngFor = "let image of topBlogImages" class="mx-3 my-4">
+    <mdb-card-img src="{{image.path}}" alt="Card image cap"></mdb-card-img>
+    <mdb-card-body class="mx-3">
+      <mdb-card-title>
+        <p class="text-left date">Sep 02, 2021</p>
+        <h4 class="text-center font-weight-bold">Wrap Your Head Around Large Scale Architecture</h4>
+      </mdb-card-title>
+      <p>A few thoughts on how to approach bigger architecural forms and not to be overwhelmed by them.</p>
+      <a href="#!" class="read-more">Read more
+        <mdb-icon class="ml-1 read-more" fas icon="long-arrow-alt-right"></mdb-icon>
+      </a>
+    </mdb-card-body>
+  </mdb-card>
+</div>
+<div class="row justify-content-center mb-4">
+  <button mdbBtn type="button" mdbWavesEffect>Show More</button>
+  <button type="button" class="btn btn-rounded">Show More</button>
+</div> -->
+
+  <h4 class="text-center font-weight-bold pt-4">Gallery</h4>
+  <hr class="pb-4" />
+  <div class="gallery">
+    <ng-image-slider
+      [images]="gallery"
+      [infinite]="true"
+      [animationSpeed]="0.1"
+      [manageImageRatio]="true"
+      slideImage="1"
+      [paginationShow]="true"
+      #nav
+    ></ng-image-slider>
+  </div>
+
+  <h4 class="text-center font-weight-bold pt-4">Our Brand Partners</h4>
+  <hr class="pb-4" />
+  <div class="sponsers mb-4 w-100">
+    <ng-image-slider
+      [images]="sponser"
+      [imagePopup]="false"
+      [imageSize]="{ width: '8%', height: '12%', space: 7 }"
+      [animationSpeed]="0.1"
+      [infinite]="true"
+      slideImage="1"
+      #nav
+      (imageClick)="imageOnClick($event)"
+    >
+    </ng-image-slider>
+  </div>
+
+  <div class="sponsers-mob mb-4 w-100">
+    <ng-image-slider
+      [images]="sponser"
+      [imagePopup]="false"
+      [imageSize]="{ space: 5 }"
+      [animationSpeed]="0.1"
+      [infinite]="true"
+      slideImage="1"
+      [manageImageRatio]="true"
+      #nav
+      (imageClick)="imageOnClick($event)"
+    >
+    </ng-image-slider>
+  </div>
+</div>

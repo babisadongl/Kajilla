@@ -1,0 +1,36 @@
+<div style="background-color: #80808008;">
+    <div class="d-flex flex-row justify-content-between mx-3">
+        <div class="col-6 d-flex align-items-center justify-content-center">
+            <div class="w-50">
+                <p>Sep 02, 2021</p>
+                <h3 class="font-weight-bold py-4">Wrap Your Head Around Large Scale Architecture</h3>
+                <p>A few thoughts on how to approach bigger architecural forms and not to be overwhelmed by them.</p>
+                <a href="#!" class="read-more">Read more
+                </a>
+            </div>
+        </div>
+        <div class="col-6 d-flex">
+            <img src="/assets/blog-screen.jpg" class="img-fluid z-depth-1 ml-3 mb-4" alt="1">
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center mt-4 mb-2">
+        <button type="button" class="btn ml-3" *ngFor = "let button of buttons">{{button.value}}</button>
+    </div>
+    <div class="row ml-5">
+        <mdb-card *ngFor = "let image of topBlogImages" class="mx-3 my-4" (click)="onCardClick()">
+          <mdb-card-img src="{{image.path}}" alt="Card image cap"></mdb-card-img>
+          <mdb-card-body class="mx-3">
+            <mdb-card-title>
+              <p class="text-left date">Sep 02, 2021</p>
+              <h4 class="text-center font-weight-bold">Wrap Your Head Around Large Scale Architecture</h4>
+            </mdb-card-title>
+            <p>A few thoughts on how to approach bigger architecural forms and not to be overwhelmed by them.</p>
+            <a href="#!" class="read-more">Read more
+            </a>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+      <div>
+            <!-- pagination here -->
+      </div>
+</div>

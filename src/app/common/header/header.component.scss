@@ -1,0 +1,35 @@
+.res-header{
+    a{
+        display: block;
+        color: black;
+        font-weight: 600;
+        font-size: 1.25rem;
+      }
+      a:hover{
+          color: grey;
+      }
+    i{
+    // font-size: 2.30rem;
+    margin-top: 0.5rem;
+    color: black;
+    }
+    .icons-menu{
+        background-color: #232A37;
+        a, i{
+            color: white;
+        }
+    }
+}
+
+
+@media (min-width: 577px) {
+.res-header{
+    display: none;
+}
+}
+
+@media (max-width: 576px) {
+.header{
+    display: none;
+}
+}
